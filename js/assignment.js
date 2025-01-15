@@ -9,7 +9,11 @@ function evenOrOdd() {
     const num = 3;
     // Write the logic to decide if the variable "num" is even or odd
     // and set the element's value the string "Even" or "Odd" accordingly
-
+    if (num % 2 === 0) {
+        console.log("Even");
+    } else {
+        console.log("Odd");
+    }
 }
 
 function sumTheNumbers() {
@@ -17,6 +21,12 @@ function sumTheNumbers() {
     // Write the logic to sum the numbers 1 through 10
     // using a for loop. Check the expected output
     // on the assignment page
+    for (let i = 0; i < 11; i + i++) {
+        sum = sum + i;
+    }
+
+    console.log (sum);
+    
 
 }
 
