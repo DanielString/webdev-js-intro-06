@@ -10,11 +10,12 @@ function evenOrOdd() {
     // Write the logic to decide if the variable "num" is even or odd
     // and set the element's value the string "Even" or "Odd" accordingly
     if (num % 2 === 0) {
-        console.log("Even");
+        evenOrOddElement.innerText = "Even";
     } else {
-        console.log("Odd");
+        evenOrOddElement.innerText = "Odd";
     }
 }
+
 
 function sumTheNumbers() {
     let sum = 0;
@@ -23,9 +24,8 @@ function sumTheNumbers() {
     // on the assignment page
     for (let i = 0; i < 11; i + i++) {
         sum = sum + i;
+        sumTheNumbersElement.innerText = sum 
     }
-
-    console.log (sum);
     
 
 }
@@ -36,12 +36,18 @@ function createNumberArray() {
     // Write the logic that loops 10 times and adds the value
     // to numberArray each iteration. Check the expected output
     // on the assignment page
-
+    for (let i = 1; i < 11; i++) {
+        numberArray.push(i)
+    }
+    
+    createNumberArrayElement.innerHTML = numberArray
 }
 
 function render() {
     // Call the created functions
-
+    evenOrOdd();
+    sumTheNumbers();
+    createNumberArray()
 }
 
 submissionBtn.addEventListener("click", function () {
